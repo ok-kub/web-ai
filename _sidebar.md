@@ -1,4 +1,4 @@
-- [Home](README.md)
+- [Home](00-overview.md)
 - **Getting Started**
   - [Overview](00-overview.md)
   - [Core Concept](00-core-concept.md)
