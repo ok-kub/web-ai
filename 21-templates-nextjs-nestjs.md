@@ -96,6 +96,7 @@ All agents must follow:
 
 ## Agent Rules
 
+- Before starting, check tasks/ for a task file matching the assigned task.
 - Keep changes scoped to the assigned task.
 - Do not refactor unrelated code.
 - Do not change database schema unless explicitly requested.
@@ -141,6 +142,7 @@ Read and follow:
 Stack: NestJS (apps/api) + Next.js App Router (apps/web) + PostgreSQL
 
 Core rules:
+- Before starting, check tasks/ for a task file matching the assigned task.
 - Follow existing architecture before creating a new pattern.
 - Keep changes minimal and scoped to the assigned task.
 - Do not refactor unrelated code.

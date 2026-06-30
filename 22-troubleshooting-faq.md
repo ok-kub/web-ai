@@ -75,7 +75,12 @@ Do not add npm packages without:
 3. Getting explicit approval in the task description.
 ```
 
-ถ้า AI ติด package ไปแล้ว: ให้ revert แล้วเพิ่มชื่อ package ที่ต้องการใน task file พร้อมเหตุผล
+ถ้า AI ติด package ไปแล้ว: ให้ remove ออกก่อน แล้วค่อยเพิ่มชื่อ package ที่ต้องการใน task file พร้อมเหตุผล
+```bash
+pnpm remove <package-name>
+# หรือถ้า commit ไปแล้ว
+git revert HEAD
+```
 
 ---
 
@@ -203,6 +208,30 @@ Test task     → TEAM_AI_STANDARD + TESTING_STANDARD
 ```
 
 ดู: [Harness Agents](15-harness-agents.md) สำหรับการแบ่ง agent ตาม role
+
+---
+
+## 11. ไม่แน่ใจว่า AI อ่าน instruction จริงหรือเปล่า
+
+**อาการ:** ตั้งค่า CLAUDE.md / AGENTS.md ไปแล้ว แต่ไม่รู้ว่า AI follow จริง หรือแค่ ignore
+
+**วิธีทดสอบ:** ส่ง prompt นี้ให้ AI ก่อนเริ่มงานจริง:
+
+```txt
+Read CLAUDE.md and summarize the rules you must follow in this project.
+List each rule as a bullet point.
+```
+
+ถ้า AI ตอบได้ถูกต้อง = อ่านแล้ว follow
+ถ้า AI ตอบไม่ได้ หรือ summarize ผิด = ไม่ได้อ่าน ให้ลอง:
+
+1. เริ่ม session ใหม่
+2. ระบุชื่อไฟล์ใน prompt: `"Read CLAUDE.md first, then..."`
+3. ตรวจสอบว่า CLAUDE.md อยู่ใน root ของ project จริง (ไม่ใช่ใน subfolder)
+
+**สำหรับ Cursor:** ตรวจว่า `.cursor/rules/*.mdc` มี `alwaysApply: true`
+**สำหรับ Copilot:** ต้อง reference ไฟล์ใน chat prompt ทุกครั้ง — ไม่ auto-read
+**สำหรับ Codex:** AGENTS.md อ่านอัตโนมัติ แต่ path ต้องอยู่ที่ root
 
 ---
 
