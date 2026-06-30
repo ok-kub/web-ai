@@ -1,32 +1,32 @@
-- [Home](00-overview.md)
-- **Getting Started**
-  - [Overview](00-overview.md)
-  - [Core Concept](00-core-concept.md)
-- **Setup**
-  - [Recommended Project Structure](01-recommended-project-structure.md)
-  - [Tool-Specific Instruction Files](02-tool-specific-instruction-files.md)
-  - [Minimum Setup](18-minimum-setup.md)
-- **Standards**
+- **🚀 เริ่มต้น**
+  - [ภาพรวม](00-overview.md)
+  - [แนวคิดหลัก](00-core-concept.md)
+  - [ตั้งค่าขั้นต่ำ](18-minimum-setup.md)
+- **⚙️ ตั้งค่าโปรเจกต์**
+  - [โครงสร้างโปรเจกต์](01-recommended-project-structure.md)
+  - [ไฟล์คำสั่ง AI](02-tool-specific-instruction-files.md)
+- **👥 มาตรฐานทีม**
   - [Team AI Standard](03-team-ai-standard-md.md)
   - [Architecture](04-architecture-md.md)
   - [File Ownership](05-file-ownership-md.md)
   - [Commands](06-commands-md.md)
-  - [Backend Standard](07-backend-standard-md.md)
-  - [Frontend Standard](08-frontend-standard-md.md)
-  - [Database Standard](09-database-standard-md.md)
-  - [Testing Standard](10-testing-standard-md.md)
-  - [Review Standard](11-review-standard-md.md)
-- **Reference**
-  - [Examples](12-examples-md.md)
+- **💻 มาตรฐานโค้ด**
+  - [Backend](07-backend-standard-md.md)
+  - [Frontend](08-frontend-standard-md.md)
+  - [Database](09-database-standard-md.md)
+  - [Testing](10-testing-standard-md.md)
+  - [Review](11-review-standard-md.md)
+- **📚 อ้างอิง**
+  - [ตัวอย่าง](12-examples-md.md)
   - [Definition of Done](13-definition-of-done-md.md)
   - [Task Template](14-task-template-md.md)
   - [Harness Agents](15-harness-agents.md)
   - [Skills](16-skills.md)
-- **Templates**
+- **🔧 Templates**
   - [Next.js + NestJS](21-templates-nextjs-nestjs.md)
-- **Advanced**
+- **🔬 Advanced**
   - [End-to-End Workflow](17-example-end-to-end-workflow.md)
   - [Anti-Patterns](19-anti-patterns.md)
   - [Final Summary](20-final-summary.md)
-- **Troubleshooting**
+- **❓ Troubleshooting**
   - [FAQ](22-troubleshooting-faq.md)
