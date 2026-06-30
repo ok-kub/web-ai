@@ -22,7 +22,11 @@
   - [Task Template](14-task-template-md.md)
   - [Harness Agents](15-harness-agents.md)
   - [Skills](16-skills.md)
+- **Templates**
+  - [Next.js + NestJS](21-templates-nextjs-nestjs.md)
 - **Advanced**
   - [End-to-End Workflow](17-example-end-to-end-workflow.md)
   - [Anti-Patterns](19-anti-patterns.md)
   - [Final Summary](20-final-summary.md)
+- **Troubleshooting**
+  - [FAQ](22-troubleshooting-faq.md)
