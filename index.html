@@ -218,11 +218,15 @@
       position: relative;
     }
 
-    .markdown-section pre code {
-      font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
-      font-size: 0.8125rem;
-      line-height: 1.6;
-      color: #e2e8f0;
+    .markdown-section pre code,
+    .markdown-section pre code span,
+    .markdown-section pre > code {
+      font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace !important;
+      font-size: 0.8125rem !important;
+      line-height: 1.6 !important;
+      color: #e2e8f0 !important;
+      opacity: 1 !important;
+      background: transparent !important;
     }
 
     .markdown-section p > code,
